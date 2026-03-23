@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 10 -T 0 -C 0.9 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     devi-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    1000
+Attributes:   15
+              gender
+              age
+              grade_level
+              attendance_rate
+              study_hours
+              internet_access
+              lunch_type
+              extra_activities
+              math_score
+              reading_score
+              writing_score
+              math_level
+              reading_level
+              writing_level
+              final_result
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.1 (100 instances)
+Minimum metric <confidence>: 0.9
+Number of cycles performed: 18
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 52
+
+Size of set of large itemsets L(2): 230
+
+Size of set of large itemsets L(3): 137
+
+Best rules found:
+
+ 1. math_score='(69.6-74.5]' 119 ==> math_level=Medium 119    <conf:(1)> lift:(1.97) lev:(0.06) [58] conv:(58.55)
+ 2. writing_score='(94.1-inf)' 116 ==> writing_level=High 116    <conf:(1)> lift:(3.16) lev:(0.08) [79] conv:(79.34)
+ 3. reading_score='(64.7-69.6]' 111 ==> reading_level=Medium 111    <conf:(1)> lift:(1.96) lev:(0.05) [54] conv:(54.39)
+ 4. reading_score='(74.5-79.4]' 110 ==> reading_level=Medium 110    <conf:(1)> lift:(1.96) lev:(0.05) [53] conv:(53.9)
+ 5. writing_score='(59.8-64.7]' 109 ==> writing_level=Medium 109    <conf:(1)> lift:(1.96) lev:(0.05) [53] conv:(53.41)
+ 6. math_score='(94.1-inf)' 108 ==> math_level=High 108    <conf:(1)> lift:(3.21) lev:(0.07) [74] conv:(74.3)
+ 7. writing_score='(84.3-89.2]' 108 ==> writing_level=High 108    <conf:(1)> lift:(3.16) lev:(0.07) [73] conv:(73.87)
+ 8. writing_score='(69.6-74.5]' 106 ==> writing_level=Medium 106    <conf:(1)> lift:(1.96) lev:(0.05) [51] conv:(51.94)
+ 9. writing_score='(64.7-69.6]' 104 ==> writing_level=Medium 104    <conf:(1)> lift:(1.96) lev:(0.05) [50] conv:(50.96)
+10. math_score='(74.5-79.4]' 103 ==> math_level=Medium 103    <conf:(1)> lift:(1.97) lev:(0.05) [50] conv:(50.68)
+
